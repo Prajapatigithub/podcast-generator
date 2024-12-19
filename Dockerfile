@@ -8,9 +8,9 @@ RUN apt-get update && apt-get install -y \
     libyaml-dev
 
 # Upgrade pip
-RUN pip3 install --upgrade pip
+RUN pip install --upgrade pip
 
-RUN pip3 install PyYAML
+RUN pip install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
